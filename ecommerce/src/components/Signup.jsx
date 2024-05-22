@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSignup = (e) => {
     e.preventDefault();
 
-    // Mock signup logic
+    // signup logic
     const isValid = validateForm();
     if (isValid) {
       console.log('Signed up:', { username, email, password });
@@ -22,7 +22,7 @@ const Signup = () => {
   };
 
   const validateForm = () => {
-    // Basic validation, you can add more complex validation as needed
+    // Basic validation
     if (!username.trim() || !email.trim() || !password.trim()) {
       setError('All fields are required');
       return false;
